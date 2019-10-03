@@ -1,0 +1,22 @@
+.social-auth__item-row {
+  display: flex;
+  width: 232px;
+  margin: auto;
+  justify-content: space-between;
+}
+.social-auth__icon {
+  display: inline-flex;
+  width: 32px;
+  height: 32px;
+  //margin: 16px;
+  background-repeat: no-repeat;
+}
+.social-auth__icon-google {
+  background-image: url("../../../assets/img/authIcons/authGoogle.svg");
+}
+.social-auth__icon-facebook {
+  background-image: url("../../../assets/img/authIcons/authFacebook.svg");
+}
+.social-auth__icon-linkedin {
+  background-image: url("../../../assets/img/authIcons/authLinkedin.svg");
+}

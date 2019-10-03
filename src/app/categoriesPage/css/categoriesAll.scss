@@ -1,0 +1,29 @@
+.categories-all {
+  &_container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  &_item {
+    margin: 10px auto;
+    width: 240px;
+    &-name {
+      color: #212121;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 0.3px;
+      font-weight: 600;
+      margin-bottom: 22px;
+    }
+    &-link {
+      color: #3d7efd;
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+      margin-left: 16px;
+    }
+  }
+}

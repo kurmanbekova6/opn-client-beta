@@ -1,0 +1,33 @@
+.tab-item {
+  max-width: 368px;
+  text-align: center;
+  color: #333333;
+  font-family: "Montserrat", sans-serif !important;
+
+  &_img {
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 2em;
+    img {
+      width: 76%;
+      height: 100%;
+      margin: auto;
+      vertical-align: middle;
+    }
+  }
+
+  &_title {
+    min-height: 56px;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+
+  &_desc {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    line-height: 24px;
+  }
+}

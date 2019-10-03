@@ -1,0 +1,69 @@
+.deals-chat-message {
+  max-width: 568px;
+  width: 100%;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  background-color: #3d7efd;
+  border-radius: 12px;
+
+  &__sent {
+    background: #12be89;
+    align-self: flex-end;
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.1em;
+  }
+
+  &_name {
+    margin: 0 1em 0 0;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    color: #fff;
+  }
+
+  &_company {
+    margin: 0;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #f0eff1;
+    text-transform: uppercase;
+  }
+
+  &_time {
+    margin: 0;
+    span {
+      margin-right: 1em;
+      font-size: 10px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      color: #f0eff1;
+      text-transform: uppercase;
+    }
+  }
+
+  &_text {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: #fff;
+  }
+}
+
+.chat-message {
+  &_files {
+    &_upload-zone {
+      cursor: pointer;
+      margin-bottom: 0 !important;
+    }
+  }
+}
+.chat-message_files input[type="file"] {
+  display: none;
+}

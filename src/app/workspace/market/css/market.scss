@@ -1,0 +1,38 @@
+.market {
+  padding-top: 2.5em;
+  &-sidebar {
+    padding-top: 5.66em;
+    &_item {
+      margin-bottom: 1em;
+      padding-left: 1.3em;
+      letter-spacing: 0.3px;
+      font-size: 1em;
+      color: #8d8d8d;
+      cursor: pointer;
+      user-select: none;
+      &__active {
+        position: relative;
+        color: #333;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 50%;
+          width: 8px;
+          height: 8px;
+          background-color: #3d7efd;
+          border-radius: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .market {
+    &-sidebar {
+      padding-top: 0.5em !important;
+    }
+  }
+}

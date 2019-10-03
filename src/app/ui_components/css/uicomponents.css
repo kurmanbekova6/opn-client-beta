@@ -1,0 +1,118 @@
+body {
+  overflow-x: hidden;
+}
+
+/* Dotted list component */
+
+.dotted-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+.dotted-list__dots {
+  flex: 1 0;
+  border-bottom: 1px dotted #548cc4;
+  height: 1em;
+  margin: 0 0.4em;
+}
+.dotted-list__num a {
+  text-decoration: underline;
+  color: #548cc4;
+}
+
+/* Dotted list component ENDS */
+
+/* Modal window */
+
+.modal__wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  left: 0;
+}
+
+.card-ico {
+  position: relative;
+  top: 28px;
+}
+
+.modal-form .inputField {
+  width: calc(100% - 20px);
+  margin-left: 25px !important;
+}
+
+.modal-form .customProfileFieldWrapper {
+  margin: 0 !important;
+}
+
+.modal-form .customProfileFieldWrapper .inputField {
+  font-size: 13px;
+  font-style: italic;
+  color: #c3c3c3;
+}
+
+.modal-pay {
+  padding: 20px 20px;
+}
+
+.pay-ico {
+  margin-right: 5px;
+}
+
+.modal__card {
+  position: relative;
+  min-width: 320px;
+  z-index: 15;
+}
+
+.modal-body {
+  max-width: 400px;
+  background: #fff;
+  padding: 2px 60px !important;
+}
+
+.modal-form {
+  max-width: 250px;
+  margin: auto;
+}
+
+.close-btn {
+  position: absolute;
+  right: 100%;
+  color: #fff;
+  border: 1px solid #fff;
+  top: -33px;
+  padding: 7px;
+  left: 92%;
+  font-size: 10px;
+  background: none;
+  height: 28px;
+  width: 28px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.close-btn:hover {
+  color: #548cc4;
+}
+
+.modal-email {
+  background: #548cc4;
+  position: absolute;
+  width: 80%;
+  margin: auto;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%);
+  color: #fff;
+  padding: 10px 20px;
+  font-style: italic;
+  font-size: 12px;
+}
+
+/* Modal window ends */

@@ -1,0 +1,117 @@
+.about {
+  max-width: 928px;
+  margin: 0 auto;
+  padding: 4em 0 2em;
+
+  &_title {
+    margin-bottom: 0.3em;
+    font-size: 3em;
+    font-weight: 600;
+    color: #212121;
+  }
+
+  &_subtitle {
+    margin-bottom: 2.3em;
+    font-size: 20px;
+    font-weight: 600;
+    color: #212121;
+    letter-spacing: 0.3px;
+  }
+
+  &-head {
+    margin-bottom: 125px;
+    &_title {
+      margin-bottom: 0.7em;
+      font-size: 2em;
+      font-weight: 600;
+      color: #212121;
+    }
+
+    &_text {
+      font-size: 1em;
+      font-weight: 500;
+      line-height: 24px;
+      letter-spacing: 0.2px;
+      color: #333;
+    }
+  }
+
+  &-features {
+    margin-bottom: 125px;
+    &_title {
+      margin-bottom: 0.5em;
+      font-size: 2em;
+      font-weight: 600;
+      color: #212121;
+      letter-spacing: 0.3px;
+    }
+
+    &-list {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      margin-bottom: 0;
+      &_item {
+        min-width: 210px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 2em;
+
+        img {
+          width: 100px;
+          height: 64px;
+          margin-bottom: 1em;
+        }
+
+        p {
+          min-height: 36px;
+          margin: 0;
+          max-width: 200px;
+          font-size: 0.75em;
+          font-weight: 500;
+          letter-spacing: 0.5px;
+          color: #000;
+        }
+      }
+    }
+  }
+
+  &-partners {
+    &_title {
+      margin-bottom: 2em;
+      font-size: 2em;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      color: #212121;
+    }
+
+    &-list {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      &_item {
+        min-width: 208px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &:not(:last-child) {
+          border-right: 1px solid #f0eff1;
+        }
+        &:not(:first-child) {
+          margin-left: 1em;
+        }
+      }
+    }
+  }
+}

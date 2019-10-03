@@ -1,0 +1,34 @@
+.sidebar_container {
+  margin-top: 122px !important;
+}
+
+.sidebar_item {
+  max-width: 200px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #8d8d8d;
+  margin-bottom: 20px;
+  max-width: 200px;
+  display: block;
+}
+
+.sidebar_item__active {
+  color: #333333;
+  text-decoration: none;
+}
+
+.sidebar_item:hover {
+  color: #333333;
+  text-decoration: none;
+}
+
+.sidebar_item_dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background: #3d7efd;
+  position: relative;
+  top: 13px;
+  left: -13px;
+}

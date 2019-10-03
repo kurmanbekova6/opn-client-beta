@@ -1,0 +1,39 @@
+.deals-chat {
+  display: flex;
+  flex-flow: column wrap;
+  height: 100%;
+  min-height: 500px;
+  padding: 2em 2em 0;
+
+  &-content {
+    display: flex;
+    flex-flow: column wrap;
+    &__empty {
+      border-radius: 12px;
+      border: 1px solid #3d7efd;
+      padding: 12px 20px;
+      min-width: 320px;
+      width: 568px;
+      &-title {
+        color: #3d7efd;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        font-weight: 600;
+      }
+      &-body {
+        color: #333333;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+
+  &-actions {
+    margin-top: auto;
+    display: flex;
+    padding: 1.3em 0 0;
+    border-top: 1px solid #ddd;
+  }
+}

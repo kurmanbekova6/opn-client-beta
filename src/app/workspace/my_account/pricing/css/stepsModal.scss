@@ -1,0 +1,76 @@
+.make-order {
+    &_button{
+        width: 224px;
+        color: #fff;
+        background: #3d7efd;
+        border-radius: 12px;
+        font-size: 14px;
+        letter-spacing: 1px;
+        padding: 15px;
+        text-align: center;
+        max-height: 48px;
+        cursor: pointer;
+        &:hover {
+          background-color: #0053c9;
+        }
+    }
+    &_step-one {
+      max-width: 384px;
+      margin: auto;
+      margin-top: 5%;
+      &_head {
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        background: #f0eff1;
+        padding: 14px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        &-name {
+          color: #333333;
+          font-size: 16px;
+          line-height: 20px;
+          letter-spacing: 0.2px;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+        &-step {
+          font-size: 12px;
+          color: #3d7efd;
+          font-weight: 700;
+          letter-spacing: 0.5px;
+        }
+      }
+      &_body {
+        padding: 21px 32px;
+        background: #ffffff;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        &-category {
+          color: #333333;
+          font-size: 14px;
+          letter-spacing: 0.2px;
+          font-weight: 500;
+          margin-bottom: 4px;
+        }
+        &-name{
+            font-size: 24px;
+            line-height: 28px;
+            color: #212121;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            margin-bottom: 28px;
+        }
+        &-variant{
+          color: #212121;
+          font-weight: 600;
+          line-height: 24px;
+          font-size: 20px;
+          letter-spacing: 0.3px;
+          margin-bottom: 21px;
+        }
+      }
+    }
+  }
+  

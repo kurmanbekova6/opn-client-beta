@@ -1,0 +1,68 @@
+.category-item {
+  max-width: 368;
+  margin-bottom: 33px;
+  min-height: 460px;
+  border: 1px solid #dddddd;
+  border-radius: 12px;
+  margin-right: 34px;
+  &:hover {
+    border: 1px solid #aaaaaa;
+  }
+  &_img {
+    position: relative;
+    height: 243px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    &-img {
+      position: absolute;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      height: 243px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      object-fit: cover;
+    }
+    &-grey {
+      height: 243px;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      background: #f0eff1;
+    }
+  }
+  &_content {
+    padding: 13px 13px 33px 32px;
+    &-company {
+      color: #3d7efd;
+      font-size: 10px;
+      letter-spacing: 1px;
+    }
+    &-name {
+      color: #212121;
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: capitalize;
+      line-height: 24px;
+      word-spacing: 0.3px;
+      margin: 15px 0;
+    }
+    &-price {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-content: center;
+      align-items: center;
+      margin-top: 31px;
+      &-number {
+        color: #333;
+        line-height: 36px;
+        letter-spacing: 0.2px;
+        font-size: 32px;
+        font-weight: 500;
+      }
+      &-button {
+        display: none;
+      }
+    }
+  }
+}

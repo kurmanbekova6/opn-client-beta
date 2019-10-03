@@ -1,0 +1,4 @@
+export const stripe = {
+    testClientId: "ca_EkFwMBuAjfeL6iOeIwv5ecxjT7RvTDDu",
+    prodClientId: "ca_EkFwsksqy0kxl7bqKb6FcUUWm8NAlG7n"
+}

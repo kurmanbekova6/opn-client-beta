@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <script>
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        document.addEventListener("DOMContentLoaded", (e) => {
+            axios.post('http://localhost:3001/api/v1/stripe_connect', {
+                "clientId":"d44cbc0d1a98928e54323a14504119af0a3c9520",
+                "access_token":"e0e74b8417f22478ab638f05ed8b9afb1d3e618c3f0b2a59255ef6f9e5f2284cf1fb45b3d669caf3ae838ef45c08ae9cc1f26c149338898043f7060d2fdd8bb922497a440fce3f06ecd73f519c256ab1fedd3ab22b8390895a8a10c415b0f47c",
+                "code":getParameterByName('code')
+            }).then((result, err) => {
+                if ( err ) alert("Fucku");
+                else window.location.href = "http://localhost:3000/index.html";
+            });
+        });  
+    </script>
+</body>
+</html>

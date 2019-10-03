@@ -1,0 +1,137 @@
+.deals-details {
+  padding: 2em 0;
+
+  &_company {
+    margin-bottom: 0.3em;
+    font-size: 1em;
+    font-weight: 500;
+    color: #3d7efd;
+    letter-spacing: 0.2px;
+  }
+
+  &_title {
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-weight: 600;
+    color: #212121;
+    letter-spacing: 0.2px;
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-info {
+    width: 100%;
+    padding-right: 2em;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    &__empty {
+      border-radius: 12px;
+      border: 1px solid #3d7efd;
+      padding: 12px 20px;
+      min-width: 320px;
+      width: 568px;
+      &-title {
+        color: #3d7efd;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        font-weight: 600;
+      }
+      &-body {
+        color: #333333;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+
+  &-row {
+    display: flex;
+    align-items: baseline;
+    p {
+      margin-right: 1em;
+      font-size: 10px;
+      font-weight: 500;
+      color: #8d8d8d;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    span {
+      margin: 0;
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+      letter-spacing: 0.2px;
+    }
+
+    &__color span {
+      color: #f29c36;
+    }
+  }
+
+  &-image {
+    max-width: 308px;
+    max-height: 208px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    &__empty {
+      background-color: #f0eff1;
+    }
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+
+  &-top-actions {
+    margin-top: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: baseline;
+    p {
+      margin: 0 2em 0 0;
+      font-size: 14px;
+      font-weight: 500;
+      color: #da2f40;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+      user-select: none;
+    }
+    &_notice {
+      margin: 0 2em 0 0;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      color: #3d7efd;
+      text-transform: uppercase;
+    }
+  }
+
+  &-bottom-actions {
+    margin-top: 4em;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      color: #3d7efd;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+      &:not(:last-child) {
+        margin-bottom: 1.5em;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.marker-tooltip * {
+  z-index: 999;
+}
+.balloon {
+  width: 380px;
+  height: 168px;
+  background-image: url("./balloon.svg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  color: #ffffff;
+  justify-content: center;
+  padding-top: 17px;
+  padding-left: 54px;
+  font-family: "Montserrat", "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+.tooltip-city {
+  font-size: 18px;
+  letter-spacing: 0.45px;
+}
+.tooltip-address {
+  font-size: 14px;
+  letter-spacing: 0.35px;
+}
+.tooltip-partner-container {
+  display: flex;
+  flex-direction: row;
+}
+.tooltip-partner-logo {
+  display: inline-flex;
+  width: 51px;
+  height: 51px;
+  background-color: white;
+  margin-right: 17px;
+  margin-top: 15px;
+  align-content: center;
+}
+
+.tooltip-partner-logo img {
+  width: 100%;
+  margin: auto;
+}

@@ -1,0 +1,64 @@
+.product-modal {
+  min-width: 750px;
+  top: 1% !important;
+  left: 50% !important;
+  transform: translate((-50%));
+  background: #fff;
+  border-radius: 12px;
+  position: absolute;
+  &_header {
+    color: #333333;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    font-size: 16px;
+    padding: 14px 24px;
+    background: #f0eff1;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 100%;
+    max-height: 48px;
+  }
+  &_content {
+    margin-bottom: 10px;
+    padding: 15px 32px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 90vh;
+    overflow-y: scroll;
+  }
+  &_left {
+    margin-right: 24px !important;
+    max-width: 320px !important;
+    &-under-check {
+      font-size: 9px;
+      color: #212121;
+      line-height: 12px;
+      letter-spacing: 0.9px;
+      padding-left: 32px;
+    }
+  }
+  &_right {
+    max-width: 320px !important;
+  }
+  &_submit {
+    width: 320px;
+    color: #ffffff !important;
+    height: 48px;
+    border-radius: 12px !important;
+    display: block !important;
+    outline: none !important;
+  }
+  &_buttons {
+    &-holder {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      align-content: flex-end;
+      justify-content: flex-end;
+    }
+  }
+}

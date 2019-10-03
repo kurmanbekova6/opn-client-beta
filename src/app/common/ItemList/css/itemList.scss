@@ -1,0 +1,13 @@
+.item-list {
+  &_container {
+    margin-bottom: 42px;
+  }
+  &_progress {
+    margin: 20px auto;
+    position: relative;
+    left: 50%;
+    &-container {
+      width: 100%;
+    }
+  }
+}

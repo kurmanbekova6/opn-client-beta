@@ -1,0 +1,64 @@
+.filter {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  max-width: 115px;
+  .MuiButton-contained {
+    background: rgba(186, 206, 246, 0.5);
+    outline: none;
+    height: 48px;
+    margin-left: 8px;
+    box-shadow: none;
+    margin-bottom: 4px;
+  }
+  &_button {
+    .MuiButton-label {
+      color: #3d7efd;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+  &_panel {
+    max-width: 320px;
+    &-title {
+      background: #dddddd;
+      color: #333333;
+      line-height: 20px;
+      font-size: 16px;
+      letter-spacing: 0.2px;
+    }
+  }
+  &_chips {
+    &-container {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-content: center;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+    &-item {
+      margin-right: 8px;
+      border-radius: 12px !important;
+      margin-top: 10px;
+      text-transform: lowercase;
+      &:hover {
+        color: #da2f40;
+        border: 1px solid #da2f40;
+        .MuiChip-deleteIcon {
+          color: #da2f40;
+        }
+      }
+    }
+  }
+
+  &_cancel {
+    margin: 10px 0 0 10px;
+    color: #da2f40;
+    cursor: pointer;
+  }
+}

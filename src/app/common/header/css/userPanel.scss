@@ -1,0 +1,19 @@
+.login-container {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+}
+
+.login-container {
+  a {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.MuiIconButton-root {
+  border-radius: 12px;
+}

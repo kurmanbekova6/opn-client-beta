@@ -1,0 +1,21 @@
+.register-company_container {
+  width: 320px;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+.signup-caption-container {
+  display: flex;
+  justify-content: space-between;
+}
+.register-company_skip-button {
+  width: 100%;
+  height: 48px;
+  margin-top: 10px !important;
+}
+.MuiButton-root:hover {
+  border-radius: 12px;
+}
+.MuiButton-label {
+  color: #aaaaaa;
+}

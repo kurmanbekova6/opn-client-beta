@@ -1,0 +1,32 @@
+.upgrade-tariff {
+  max-width: 384px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 3em 2em 1em;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 12px;
+  &_close {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+  }
+  &_title {
+    margin: 1em 0 0.5em;
+    font-size: 24px;
+    font-weight: 600;
+    color: #212121;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+  }
+
+  &_info {
+    margin-bottom: 4em;
+    font-size: 14px;
+    font-weight: 500;
+    color: #8d8d8d;
+    letter-spacing: 0.2px;
+  }
+}

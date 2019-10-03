@@ -1,0 +1,12 @@
+.select-category {
+  margin-bottom: 22px !important;
+  .MuiInputLabel-formControl {
+    top: -6px;
+    left: 14px;
+    z-index: 90;
+  }
+  .MuiInputLabel-shrink {
+    padding: 2px 4px;
+    background-color: #fff;
+  }
+}
