@@ -4449,8 +4449,7 @@ tbody td {
   padding: 0.5rem 0.625rem 0.625rem;
 }
 
-tbody tr:nth-child(even) {
-  border-bottom: 0;
+tbody tr:nth-child(odd) {
   background-color: #f1f1f1;
 }
 
@@ -4495,7 +4494,7 @@ table.hover tfoot tr:hover {
 table.hover tbody tr:hover {
   background-color: #f9f9f9;
 }
-table.hover:not(.unstriped) tr:nth-of-type(even):hover {
+table.hover:not(.unstriped) tr:nth-of-type(odd):hover {
   background-color: #ececec;
 }
 
@@ -7157,6 +7156,22 @@ footer.footer .general .copyright {
   z-index: 99;
 }
 
+.divider-center {
+  position: relative;
+}
+
+.divider-center::after {
+  content: "";
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 1px;
+  background-color: rgba(33, 33, 33, 0.16);
+  height: 80px;
+}
+
 @media screen and (min-width: 769px) {
   .home-page .section.is-medium {
     padding-top: 136px;
@@ -7167,6 +7182,11 @@ footer.footer .general .copyright {
   main .home-page .hero {
     padding-top: 12px;
     padding-bottom: 90px;
+  }
+
+  .h1 {
+    font-size: 48px;
+    line-height: 48px;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -16063,6 +16083,7 @@ body {
 }
 
 .button.btn-filled {
+  position: relative;
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
@@ -16085,8 +16106,27 @@ body {
   background-color: #3d7efd;
 }
 
+.button.btn-expanded {
+  min-width: 320px;
+}
+
+.button.btn-filled .material-icons.opn-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: auto;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 0;
+  height: 0;
+}
+
 .button.btn-category {
-  padding: 36px 56px;
+  width: 100%;
+  display: block;
+  padding: 36px 42px;
   font-size: 24px;
   color: rgba(33, 33, 33, 0.38);
   font-weight: 600;
@@ -16155,8 +16195,6 @@ body {
 
 .opn-icon {
   color: rgba(33, 33, 33, 0.38);
-  margin-left: 5px;
-  vertical-align: inherit;
 }
 
 .opn-icon:hover {
@@ -16165,10 +16203,6 @@ body {
 
 .opn-icon:active {
   color: rgba(33, 33, 33, 0.87);
-}
-
-.button .material-icons.opn-icon {
-  color: rgba(255, 255, 255, 0.7);
 }
 
 .home-page {
@@ -16253,8 +16287,8 @@ body {
   padding: 57px 0 0 0;
 }
 
-.home-category-list .button-group {
-  margin-bottom: 0;
+.home-category-list .btn-filled {
+  margin-top: 56px;
 }
 
 .home-page .hero {
@@ -16269,9 +16303,16 @@ body {
 }
 
 .home-page .subheader {
+  margin-bottom: 22px;
+}
+
+.subheader {
   max-width: 600px;
   margin: 0 auto;
-  margin-bottom: 22px;
+}
+
+.subheader + .subheader {
+  margin-top: 15px;
 }
 
 .about-page .features .card .card-section {
@@ -16300,6 +16341,11 @@ body {
 
 .about-page .section .h4 {
   margin-bottom: 23px;
+}
+
+.about-page .features .h4,
+.about-page .partners .h4 {
+  margin-bottom: 57px;
 }
 
 .auth-page {
@@ -16362,6 +16408,102 @@ body {
 
 .tariff .tariff-features .limits .limit-item.soon::after,
 .tariff .tariff-features .bonuses .bonuse-item.soon::after {
+  font-size: 10px;
+  font-weight: 500;
+  color: #ffffff;
+  content: "Soon";
+  padding: 4px 6px;
+  border-radius: 2px;
+  background-color: #f29c36;
+  margin-left: 8px;
+}
+
+.tariff-desc {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tariff-desc .instructions .instructions-list .instructions-list-item .step-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: rgba(33, 33, 33, 0.38);
+  margin-right: 13px;
+}
+
+.tariff-desc .instructions .instructions-list .instructions-list-item {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #212121;
+}
+
+.tariff-desc .instructions .instructions-list .instructions-list-item:nth-child(n+2) {
+  margin-top: 20px;
+}
+
+.tariff-desc .instructions {
+  padding-top: 46px;
+  padding-bottom: 59px;
+}
+
+.tariff-desc .tariff-data .header {
+  align-items: center;
+  padding: 0;
+}
+
+.tariff-desc .tariff-data .header .h3 {
+  margin-bottom: 0;
+}
+
+.tariff-desc .tariff-data .header .price {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #3d7efd;
+}
+
+.tariff-desc .tariff-data .table-data {
+  margin-top: 24px;
+  margin-bottom: 56px;
+}
+
+.tariff-desc .tariff-data .table-data tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+.tariff-desc .tariff-data .table-data .td-title {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: rgba(33, 33, 33, 0.87);
+}
+
+.tariff-desc .tariff-data .table-data,
+.tariff-desc .tariff-data .table-data tbody {
+  border: 0;
+  border-color: transparent;
+}
+
+.tariff-desc .tariff-data .table-data .td-desc {
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: right;
+  color: #212121;
+}
+
+.tariff-desc .tariff-data .table-data .td-title,
+.tariff-desc .tariff-data .table-data .td-desc {
+  padding: 12px 16px;
+}
+
+.tariff-desc .tariff-data .table-data .td-title .soon {
+  position: relative;
+  display: inline-block;
+  color: rgba(33, 33, 33, 0.38);
+}
+
+.tariff-desc .tariff-data .table-data .td-title .soon::after {
   font-size: 10px;
   font-weight: 500;
   color: #ffffff;
