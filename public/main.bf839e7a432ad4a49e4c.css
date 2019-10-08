@@ -16310,6 +16310,42 @@ body {
   margin-top: 15px;
 }
 
+.home-page .section {
+  padding-top: 66px;
+  padding-bottom: 66px;
+}
+
+.trustedby .h3 {
+  margin-bottom: 0;
+}
+
+.trustedby .logo-list .logo-list-item .cell {
+  margin-top: 32px;
+}
+
+.ourpower .numbers .network {
+  margin-top: 28px;
+}
+
+.ourpower .numbers .network .stat-container .num {
+  font-size: 64px;
+  line-height: 48px;
+  font-weight: 600;
+  color: #212121;
+  margin-bottom: 24px;
+}
+
+.ourpower .numbers .network .stat-container .stat {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.17;
+  color: rgba(33, 33, 33, 0.87);
+}
+
+.ourpower .numbers .network .stat-container {
+  margin-top: -45px;
+}
+
 .about-page .features .card .card-section {
   padding: 20px 0 0 0;
 }
@@ -16552,4 +16588,22 @@ body {
   display: flex;
   flex-direction: column;
   margin: auto;
+  align-items: center;
+}
+
+.thankyou .h4 {
+  margin-bottom: 25px;
+}
+
+.thankyou .material-icons.check_circle {
+  margin-right: 10px;
+  color: #12be89;
+}
+
+.thankyou .subheader {
+  margin-bottom: 14px;
+}
+
+.thankyou .button {
+  margin: 14px 0;
 }
