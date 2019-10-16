@@ -13341,6 +13341,7 @@ iframe {
 
 .market {
   padding-top: 2.5em;
+  padding-top: 5em;
 }
 .market-sidebar {
   padding-top: 5.66em;
@@ -15407,8 +15408,11 @@ body {
 }
 
 .workspace-menu {
+  justify-content: center;
   display: flex;
   flex-flow: row wrap;
+  position: relative;
+  z-index: 2;
 }
 .workspace-menu_item {
   position: relative;
@@ -16104,6 +16108,10 @@ body {
   color: #548cc4 !important;
 }
 
+.workspace-menu_item {
+  line-height: 0;
+}
+
 .button.btn-filled {
   position: relative;
   font-size: 14px;
@@ -16699,17 +16707,6 @@ body {
   color: rgba(33, 33, 33, 0.38);
 }
 
-.tariff-desc .tariff-data .table-data .td-title .soon::after {
-  font-size: 10px;
-  font-weight: 500;
-  color: #ffffff;
-  content: "Soon";
-  padding: 4px 6px;
-  border-radius: 2px;
-  background-color: #f29c36;
-  margin-left: 8px;
-}
-
 .contact-page .section-list .section:nth-child(n+2) {
   margin-top: 65px;
 }
@@ -16874,10 +16871,20 @@ body {
   margin-bottom: 19px;
 }
 
-.payment-steps .stripe-form .stripe-input {
+.payment-steps .stripe-form .stripe-input,
+.payment-steps .auth-form .stripe-input {
   border-radius: 8px;
   border: solid 1px rgba(33, 33, 33, 0.38);
   padding: 14px 16px;
+}
+
+.payment-steps .auth-form .stripe-input {
+  margin: 21px 0 41px;
+}
+
+.payment-steps .auth-form .stripe-input input {
+  background: none;
+  border: 0;
 }
 
 .payment-steps .stripe-form {
