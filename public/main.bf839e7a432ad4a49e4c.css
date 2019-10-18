@@ -16878,6 +16878,27 @@ body {
   padding: 14px 16px;
 }
 
+.payment-steps .auth-form .form-control .options label {
+  margin-left: 2px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.33;
+  color: #212121;
+}
+
+.payment-steps .auth-form .form-control {
+  margin-top: 23px;
+  margin-bottom: 41px;
+}
+
+.payment-steps .auth-form .form-control .options {
+  margin-bottom: 28px;
+}
+
+.payment-steps .auth-form .form-control .stripe-input {
+  margin: 0;
+}
+
 .payment-steps .auth-form .stripe-input {
   margin: 21px 0 41px;
 }
@@ -16885,6 +16906,9 @@ body {
 .payment-steps .auth-form .stripe-input input {
   background: none;
   border: 0;
+  display: block;
+  width: 100%;
+  max-width: 100%;
 }
 
 .payment-steps .stripe-form {
