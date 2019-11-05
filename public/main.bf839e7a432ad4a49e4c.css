@@ -16933,8 +16933,8 @@ body {
   counter-reset: onboarding;
 }
 
-.onboarding {
-  padding-top: 40px;
+.onboarding .tabs {
+  margin-top: 50px;
 }
 
 .onboarding .tabs .tabs-title {
@@ -17138,6 +17138,28 @@ body {
 .onboarding .onboarding-tabs-content .step-2 .next-step,
 .onboarding .onboarding-tabs-content .step-3 .next-step {
   margin-bottom: 2rem;
+}
+
+.reveal.onboarding-show {
+  display: block;
+}
+
+.onboarding .onboarding-tabs-content .register-finish .step-5 {
+  width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.onboarding .onboarding-tabs-content .register-finish .h4 {
+  margin-bottom: 25px;
+}
+
+.onboarding .onboarding-tabs-content .register-finish .subheader {
+  margin-bottom: 14px;
+}
+
+.onboarding .onboarding-tabs-content .register-finish .button {
+  margin: 14px 0 0;
 }
 
 .referral-program .youtube-presentation {
@@ -17373,4 +17395,28 @@ body {
 
 .referral-program .article-footer .price-link {
   margin-top: 51px;
+}
+
+.partner-page .section {
+  background-image: linear-gradient(to left, rgba(61, 126, 253, 0) 100%, rgba(61, 126, 253, 0.16) 50%, rgba(61, 126, 253, 0) 0%);
+}
+
+.partner-page .grid-container:nth-child(n+2) {
+  margin-top: 150px;
+}
+
+.partner-page .section .h5 {
+  color: rgba(33, 33, 33, 0.54);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+
+.partner-page .section img {
+  padding: 40px 0;
+}
+
+.partner-page .section.tech-list .grid-x:nth-of-type(2) img {
+  padding-top: 0;
 }
