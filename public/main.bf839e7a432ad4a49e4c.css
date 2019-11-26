@@ -15286,6 +15286,19 @@ body {
   color: rgba(61, 126, 253, 0.38);
 }
 
+.btn-chat {
+  position: relative !important;
+  margin: 0;
+  padding-left: 40px !important;
+}
+
+.btn-chat .material-icons {
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  left: 10px;
+}
+
 .opn-icon {
   color: rgba(33, 33, 33, 0.38);
 }
@@ -17669,6 +17682,9 @@ body {
   border: 0;
   resize: none;
   width: 100%;
+  padding: 0 22px;
+  font-size: 14px;
+  line-height: 1.43;
 }
 
 .chat-space .chat-details .chat-messages .send-chat-msg-window-container .send-chat-msg-window .send-chat-msg-window-icon-text textarea:active,
@@ -17690,4 +17706,63 @@ body {
   margin-left: 8px;
   display: flex;
   align-items: center;
+}
+
+.chat-details .chat-messages .send-chat-msg-window-container .send-chat-msg-window .send-chat-msg-window-icon .material-icons {
+  color: rgba(33, 33, 33, 0.38);
+}
+
+.deal-details {
+  padding: 16px 0;
+}
+
+hr.deal-table-divider {
+  border-top: 1px solid rgba(33, 33, 33, 0.16);
+  border-bottom: 0;
+}
+
+.deal-details table tr {
+  border: 0 !important;
+}
+
+.deal-details table {
+  margin: 0;
+}
+
+.deal-details table tr td {
+  padding: 14px 16px;
+}
+
+.deal-details table tr td.field-option-name {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(33, 33, 33, 0.54);
+  text-transform: uppercase;
+}
+
+.deal-details table tr td.field-option-value {
+  font-size: 14px;
+  line-height: 1.43;
+  color: #212121;
+}
+
+.deal-details table tbody {
+  border: 0;
+}
+
+.deal-details table tbody tr > td:first-child {
+  width: 45%;
+}
+
+.deal-status {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #fff;
+  padding: 4px 6px;
+  text-transform: uppercase;
+}
+
+.deal-status.deal-closed {
+  background-color: #3d7efd;
 }
